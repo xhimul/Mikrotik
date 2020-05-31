@@ -26,7 +26,7 @@ IP > Address > ether2 > 10.0.201.2/24
 VRRP > R2_VRRP1_Slave >Interface: ether2 > VRID: 10 > Priority: 90\
 VRRP > R2_VRRP_Master >Interface: ether2 > VRID: 20 > Priority: 150
 ### Add VRRP IP:
-IP > Address > R2_VRRP1_Slave > 10.0.201.253/24\ 
+IP > Address > R2_VRRP1_Slave > 10.0.201.253/24\
 IP > Address > R2_VRRP_Master > 10.0.201.254/24
 ### DHCP Server:
 IP > DHCP Server > [Interface: LAN_ether2] > GW: 254 Range: 101-200
