@@ -5,8 +5,8 @@ IP > Address > ether1 > XX.XX.XX.XX/XX
 IP > Address > ether2 > 10.0.201.1/24
 
 ### Add VRRP:
-VRRP > R1_VRRP1_Master >Interface: ether2 > VRID: 10 > Priority: 100 [Master]\
-VRRP > R1_VRRP2_Slave >Interface: ether2 > VRID: 20 > Priority: 140 [Slave]
+VRRP > R1_VRRP1_Master >Interface: ether2 > VRID: 10 > Priority: 100\
+VRRP > R1_VRRP2_Slave >Interface: ether2 > VRID: 20 > Priority: 140
 ### Add VRRP IP:
 IP > Address > R1_VRRP1_Master > 10.0.201.253/24\
 IP > Address > R1_VRRP2_Slave > 10.0.201.254/24
