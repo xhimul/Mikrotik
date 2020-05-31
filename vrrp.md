@@ -5,7 +5,7 @@ IP > Address > ether1 > XX.XX.XX.XX/XX
 IP > Address > ether2 > 10.0.201.2/24
 
 ##### Add VRRP:
-Interface > VRRP > vrrp1 >Interface: ether2 > VRID: 10 > Priority: 100\
+Interface > VRRP > vrrp1 >Interface: ether2 > VRID: 10 > Priority: 100
 
 ### Add VRRP IP:
 IP > Address > vrrp1 > 10.0.201.1/24
