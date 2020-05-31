@@ -1,8 +1,15 @@
 # Per Connection Queue (PCQ)
 
 ## Step 1 (Add two mangle rules):
-IP > Firewall > Mangle > General > Chain: prerouting, In-interface: LAN | Action: mark packet, New Packet Mark: client_upload, Passthrough: Check\
-IP > Firewall > Mangle > General > Chain: prerouting, In-interface: WAN | Action: mark packet, New Packet Mark: client_download, Passthrough: Check
+
+##### IP > Firewall > Mangle > General > 
+Chain: prerouting, In-interface: LAN\
+Action: mark packet, New Packet Mark: client_upload, Passthrough: Check
+
+##### IP > Firewall > Mangle > 
+General > Chain: prerouting, In-interface: WAN\
+Action: mark packet, New Packet Mark: client_download, Passthrough: Check
+
 
 ## Step 2(Add two Queue Type):
 Queues > Queue Typs > Name: pcq_download, Kind: pcq, Rate: 10M, Classifier: Dst. Address\
