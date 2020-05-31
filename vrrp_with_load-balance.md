@@ -9,7 +9,7 @@ Interface > VRRP > vrrp2 >Interface: ether2 > VRID: 20 > Priority: 140\
 \
 IP > Address > vrrp1 > 10.0.201.253/24\
 IP > Address > vrrp2 > 10.0.201.254/24\
-\
+
 
 
 # R2:
@@ -23,7 +23,7 @@ Interface > VRRP > vrrp2 >Interface: ether2 > VRID: 20 > Priority: 150\
 \
 IP > Address > vrrp1 > 10.0.201.253/24\
 IP > Address > vrrp2 > 10.0.201.254/24\
-\
 
-# AP1 > 10.0.201.3/24 GW: 10.0.201.253
-# AP2 > 10.0.201.4/24 GW: 10.0.201.254 
+
+#### AP1 > 10.0.201.3/24 GW: 10.0.201.253
+#### AP2 > 10.0.201.4/24 GW: 10.0.201.254 
