@@ -4,12 +4,15 @@ IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
 IP > Address > ether2 > 10.0.201.1/24
 
-##### Add VRRP:
-Interface > VRRP > vrrp1 >Interface: ether2 > VRID: 10 > Priority: 100\
-Interface > VRRP > vrrp2 >Interface: ether2 > VRID: 20 > Priority: 140
+### Add VRRP:
+VRRP > R1_VRRP1_Master >Interface: ether2 > VRID: 10 > Priority: 100 [Master]\
+VRRP > R1_VRRP2_Slave >Interface: ether2 > VRID: 20 > Priority: 140 [Slave]
 ### Add VRRP IP:
-IP > Address > vrrp1 > 10.0.201.253/24\
-IP > Address > vrrp2 > 10.0.201.254/24
+IP > Address > R1_VRRP1_Master > 10.0.201.253/24\
+IP > Address > R1_VRRP2_Slave > 10.0.201.254/24
+
+### DHCP Server:
+IP > DHCP Server > [Interface: LAN_ether2] > GW: 253 Range: 101-200
 
 
 
@@ -19,12 +22,14 @@ IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
 IP > Address > ether2 > 10.0.201.2/24
 
-##### Add VRRP:
-Interface > VRRP > vrrp1 >Interface: ether2 > VRID: 10 > Priority: 90\
-Interface > VRRP > vrrp2 >Interface: ether2 > VRID: 20 > Priority: 150
+### Add VRRP:
+VRRP > R2_VRRP1_Slave >Interface: ether2 > VRID: 10 > Priority: 90\
+VRRP > R2_VRRP_Master >Interface: ether2 > VRID: 20 > Priority: 150
 ### Add VRRP IP:
-IP > Address > vrrp1 > 10.0.201.253/24\
-IP > Address > vrrp2 > 10.0.201.254/24
+IP > Address > R2_VRRP1_Slave > 10.0.201.253/24\ 
+IP > Address > R2_VRRP_Master > 10.0.201.254/24
+### DHCP Server:
+IP > DHCP Server > [Interface: LAN_ether2] > GW: 254 Range: 101-200
 
 
 #### AP1 > 10.0.201.3/24 GW: 10.0.201.253
