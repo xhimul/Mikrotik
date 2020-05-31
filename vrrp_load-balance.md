@@ -1,4 +1,5 @@
-# R1:
+# Virtual Router Redundancy Protocol (VRRP)
+## R1:
 ### Add WAN IP:
 IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
@@ -16,7 +17,7 @@ IP > DHCP Server > [Interface: LAN_ether2] > GW: 253 Range: 101-200
 
 
 
-# R2:
+## R2:
 ### Add WAN IP:
 IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
@@ -32,5 +33,5 @@ IP > Address > R2_VRRP_Master > 10.0.201.254/24
 IP > DHCP Server > [Interface: LAN_ether2] > GW: 254 Range: 101-200
 
 
-#### AP1 > 10.0.201.3/24 GW: 10.0.201.253
-#### AP2 > 10.0.201.4/24 GW: 10.0.201.254 
+##### AP1 > 10.0.201.3/24 GW: 10.0.201.253
+##### AP2 > 10.0.201.4/24 GW: 10.0.201.254 
