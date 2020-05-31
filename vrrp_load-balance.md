@@ -13,7 +13,7 @@ IP > Address > R1_VRRP1_Master > 10.0.201.253/24\
 IP > Address > R1_VRRP2_Slave > 10.0.201.254/24
 
 ### DHCP Server:
-IP > DHCP Server > [Interface: LAN_ether2] > GW: 253 Range: 101-200
+IP > DHCP Server > [Interface: LAN_ether2] > GW: 10.0.201.253 Range: 10.0.201.101-10.0.201.200
 
 
 
@@ -30,7 +30,7 @@ VRRP > R2_VRRP_Master >Interface: ether2 > VRID: 20 > Priority: 150
 IP > Address > R2_VRRP1_Slave > 10.0.201.253/24\
 IP > Address > R2_VRRP_Master > 10.0.201.254/24
 ### DHCP Server:
-IP > DHCP Server > [Interface: LAN_ether2] > GW: 254 Range: 101-200
+IP > DHCP Server > [Interface: LAN_ether2] > GW: GW: 10.0.201.254 Range: 10.0.201.101-10.0.201.200
 
 
 ##### AP1 > 10.0.201.3/24 GW: 10.0.201.253
