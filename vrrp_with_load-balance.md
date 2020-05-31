@@ -1,5 +1,6 @@
 # R1:
-Add WAN IP
+### Add WAN IP:
+IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
 IP > Address > ether2 > 10.0.201.1/24
 
@@ -13,7 +14,8 @@ IP > Address > vrrp2 > 10.0.201.254/24
 
 
 # R2:
-Add WAN IP
+### Add WAN IP:
+IP > Address > ether1 > XX.XX.XX.XX/XX
 ### Add LAN IP: 
 IP > Address > ether2 > 10.0.201.2/24
 
