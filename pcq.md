@@ -2,8 +2,8 @@
 
 ## Step 1 (Add two mangle rules):
 
-##### IP > Firewall > Mangle > General > 
-Chain: prerouting, In-interface: LAN\
+##### IP > Firewall > Mangle > 
+General > Chain: prerouting, In-interface: LAN\
 Action: mark packet, New Packet Mark: client_upload, Passthrough: Check
 
 ##### IP > Firewall > Mangle > 
